@@ -8,4 +8,6 @@ The native-toolchain-source.tar.gz archive contains the complete native build to
 
 The author supplied the tested console executable separately; binary reproducibility was not checked.
 
-The author-confirmed executable is 109444 bytes. Supplied return-watchdog source is not included: it was not recovered here. The native runtime and ELF files were supplied separately by the author; this source bundle is not asserted to reproduce them bit-for-bit.
+Native deployment requires SELF containers, not raw ELF renamed to eboot.bin/libc.prx. The recovered raw payloads (109444-byte executable, 1335962-byte runtime) were wrapped with the project's native tool. The author tested the resulting 50730-byte eboot.bin and 1284674-byte libc.prx together on PS5 firmware 5.10 / etaHEN 2.6B. See INSTALL.md for hashes. Preserve the SELF wrapping steps in tools/build.sh and tools/rebuild-libc.sh when using the original toolchain. A matching filename or byte count alone is not proof of correct format.
+
+Supplied return-watchdog source is not included: it was not recovered here. A bit-for-bit source/binary rebuild is not asserted.
