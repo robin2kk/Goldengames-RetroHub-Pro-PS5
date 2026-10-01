@@ -1,6 +1,6 @@
 # Source and attribution
 
-GPL-3.0-or-later. Corresponding frontend, helper and build tool source included.
+GPL-3.0-or-later. Frontend, return-chord helper and native build-tool source included; source coverage for supplied binaries is detailed below.
 
 - Native startup, module writer, clean-room runtime and VideoOut adapter:
   BlackBearReloaded/ps5-native-app-boilerplate,
@@ -25,3 +25,9 @@ https://github.com/blackbearreloaded/ProsperoLight
 https://github.com/mihawk-99/PS5_RetroArch
 https://github.com/ps5-payload-dev/sdk
 https://github.com/libretro/RetroArch
+
+## Complete package additions
+
+The native runtime identifies itself as the BlackBearReloaded clean-room libc. The executable, runtime and return helpers were supplied by the author from his working installation. The custom source for the supplied return-watchdog binary was not recovered in this session; the supplied source bundle covers the frontend, native build tooling, runtime builder and return-chord helper. No bit-for-bit source/binary match is asserted.
+
+The optional overlays package comes from libretro/overlay-borders revision 9aceca2dd514c589a57d40086557b804851aafcf. Its included LICENSE.txt and SOURCES.json are retained.
