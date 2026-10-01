@@ -4,11 +4,17 @@ Native PS5 retro gaming frontend by GoldenGames, with 3D cover flow, automatic c
 
 ## Download
 
-[v0.1.0 — Professional UI update](https://github.com/robin2kk/Goldengames-RetroHub-Pro-PS5/releases/tag/v0.1.0)
+[v0.1.0 — Complete package and corrected update](https://github.com/robin2kk/Goldengames-RetroHub-Pro-PS5/releases/tag/v0.1.0)
 
-**This release updates an existing working RetroHub Pro installation. It is not a standalone installer.** RetroArch, cores, native runtime, and return helpers must already be installed. See [INSTALL.md](INSTALL.md).
+**Use the downloads marked `Corrected`.** The author confirmed the working executable is **109,444 bytes**; the earlier 50,730-byte update is superseded.
 
-Download `Goldengames-RetroHub-Pro-0.1.0-Update.zip` to update the application. Download `Goldengames-RetroHub-Pro-0.1.0-Source.zip` for the complete source/build bundle, including the native build-tool source and artwork. The repository exposes the frontend and helper source for browsing; use the complete source ZIP to build.
+- `Goldengames-RetroHub-Pro-0.1.0-Complete-Corrected.zip`: application folder with native runtime, return helpers and logo artwork for first-time RetroHub deployment.
+- `Goldengames-RetroHub-Pro-0.1.0-Update-Corrected.zip`: executable and artwork for existing installations.
+- `Goldengames-RetroHub-Pro-0.1.0-Source-Corrected.zip`: frontend, native build-tool/runtime-builder source, return-chord source and artwork. Use this source bundle to build; repository archives alone omit the toolchain archive/artwork.
+- `Goldengames-RetroHub-Pro-Console-Overlays.zip`: optional console borders/presets for an overlay-enabled RetroArch build.
+- `SHA256SUMS-Corrected.txt`: archive checksums.
+
+See [INSTALL.md](INSTALL.md). The complete ZIP is a deployable application folder, not a PKG or an automatic ELF installer. Homebrew Launcher/websrv and RetroArch/cores must be installed separately.
 
 ## Features
 
@@ -23,7 +29,7 @@ Download `Goldengames-RetroHub-Pro-0.1.0-Update.zip` to update the application. 
 
 Tested by the author on **PS5 firmware 5.10**. Other firmware versions are untested by the author.
 
-RetroArch is installed separately at `/data/homebrew/RetroArch/`; game launching requires the Homebrew Launcher/websrv service. Existing return-watchdog and return-chord helpers are required for the return flow.
+**Homebrew Launcher with websrv enabled on port 8080 is required to launch games.** RetroArch and its PS5-compatible cores are installed separately at `/data/homebrew/RetroArch/`. Both return helpers are included in the complete package. A clean first-time installation of the assembled archive has not been hardware-tested here.
 
 ## Controls
 
@@ -39,6 +45,6 @@ The PS5 menu may appear briefly before RetroHub returns. The PS5 selection backg
 
 ## Source and credits
 
-See [LICENSE](LICENSE), [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md), and [BUILDING.md](BUILDING.md). The tested executable was supplied by the author from the working console; a bit-for-bit source/binary match has not been verified here.
+See [LICENSE](LICENSE), [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md), and [BUILDING.md](BUILDING.md). The tested executable was supplied by the author from the working console; a bit-for-bit source/binary match has not been verified here. The custom source for the supplied return-watchdog binary was not recovered in this session and is not included.
 
 No RetroArch executable, cores, ROMs, BIOS files, saves, downloaded covers, or personal configurations are included.
