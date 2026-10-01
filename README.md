@@ -4,15 +4,17 @@ Native PS5 retro gaming frontend by GoldenGames, with 3D cover flow, automatic c
 
 ## Download
 
-[v0.1.0 — Complete package and corrected update](https://github.com/robin2kk/Goldengames-RetroHub-Pro-PS5/releases/tag/v0.1.0)
+[v0.1.0 — Native SELF fix](https://github.com/robin2kk/Goldengames-RetroHub-Pro-PS5/releases/tag/v0.1.0)
 
-**Use the downloads marked `Corrected`.** The author confirmed the working executable is **109,444 bytes**; the earlier 50,730-byte update is superseded.
+**Use the downloads marked `Native-Fixed`.** The author tested the recovered SELF executable and runtime on October 1, 2026. Earlier Complete-Corrected and Update-Corrected packages contained raw ELF files and are superseded.
 
-- `Goldengames-RetroHub-Pro-0.1.0-Complete-Corrected.zip`: application folder with native runtime, return helpers and logo artwork for first-time RetroHub deployment.
-- `Goldengames-RetroHub-Pro-0.1.0-Update-Corrected.zip`: executable and artwork for existing installations.
-- `Goldengames-RetroHub-Pro-0.1.0-Source-Corrected.zip`: frontend, native build-tool/runtime-builder source, return-chord source and artwork. Use this source bundle to build; repository archives alone omit the toolchain archive/artwork.
-- `Goldengames-RetroHub-Pro-Console-Overlays.zip`: optional console borders/presets for an overlay-enabled RetroArch build.
-- `SHA256SUMS-Corrected.txt`: archive checksums.
+- `Goldengames-RetroHub-Pro-0.1.0-Complete-Native-Fixed.zip`: application folder with both tested SELF files, return helpers and artwork.
+- `Goldengames-RetroHub-Pro-0.1.0-Update-Native-Fixed.zip`: both tested SELF files and artwork for existing installations. Replace **both** eboot.bin and sce_module/libc.prx.
+- `Goldengames-RetroHub-Pro-0.1.0-Source-Native-Fixed.zip`: source bundle with corrected deployment documentation. A bit-for-bit rebuild is not verified.
+- `Goldengames-RetroHub-Pro-Console-Overlays.zip`: optional console borders/presets.
+- `SHA256SUMS-Native-Fixed.txt`: archive checksums.
+
+The tested eboot.bin is **50,730 bytes**, SHA-256 `59cea01199b22570c734057aef26d2c6168e888ffe8508f4513b9c82c045ba5a`; libc.prx is **1,284,674 bytes**, SHA-256 `8a29784545983fffd7428446912711ec4e269672673e2d281612d3dbf4c39e88`. Size alone does not identify a build.
 
 See [INSTALL.md](INSTALL.md). The complete ZIP is a deployable application folder, not a PKG or an automatic ELF installer. Homebrew Launcher/websrv and RetroArch/cores must be installed separately.
 
@@ -27,9 +29,9 @@ See [INSTALL.md](INSTALL.md). The complete ZIP is a deployable application folde
 
 ## Compatibility and requirements
 
-Tested by the author on **PS5 firmware 5.10**. Other firmware versions are untested by the author.
+Tested by the author on **PS5 firmware 5.10 with etaHEN 2.6B**. Other firmware versions are untested by the author.
 
-**Homebrew Launcher with websrv enabled on port 8080 is required to launch games.** RetroArch and its PS5-compatible cores are installed separately at `/data/homebrew/RetroArch/`. Both return helpers are included in the complete package. A clean first-time installation of the assembled archive has not been hardware-tested here.
+**Homebrew Launcher with websrv enabled on port 8080 is required to launch games.** RetroArch and its PS5-compatible cores are installed separately at `/data/homebrew/RetroArch/`. Use a compatible native folder loader/registration workflow, such as the author's ShadowMountPlus setup, for the PS5 application tile. Both return helpers are included in the complete package. A clean first-time installation of the assembled archive has not been hardware-tested here.
 
 ## Controls
 
