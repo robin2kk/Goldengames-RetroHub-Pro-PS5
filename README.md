@@ -4,17 +4,15 @@ Native PS5 retro gaming frontend by GoldenGames, with 3D cover flow, automatic c
 
 ## Download
 
-**Upload pending:** Native-Fixed archives have been prepared and verified, but are not yet attached to the release. Do not install the superseded Complete/Update assets. The package list below describes the planned replacement downloads.
-
 [v0.1.0 — Native SELF fix](https://github.com/robin2kk/Goldengames-RetroHub-Pro-PS5/releases/tag/v0.1.0)
 
 **Use the downloads marked `Native-Fixed`.** The author tested the recovered SELF executable and runtime on October 1, 2026. Earlier Complete-Corrected and Update-Corrected packages contained raw ELF files and are superseded.
 
 - `Goldengames-RetroHub-Pro-0.1.0-Complete-Native-Fixed.zip`: application folder with both tested SELF files, return helpers and artwork.
 - `Goldengames-RetroHub-Pro-0.1.0-Update-Native-Fixed.zip`: both tested SELF files and artwork for existing installations. Replace **both** eboot.bin and sce_module/libc.prx.
-- `Goldengames-RetroHub-Pro-0.1.0-Source-Native-Fixed.zip`: source bundle with corrected deployment documentation. A bit-for-bit rebuild is not verified.
+- Source archives marked `Superseded` are retained for history. Consult [BUILDING.md](BUILDING.md) on the main branch for corrected deployment guidance; a bit-for-bit rebuild is not verified.
 - `Goldengames-RetroHub-Pro-Console-Overlays.zip`: optional console borders/presets.
-- `SHA256SUMS-Native-Fixed.txt`: archive checksums.
+- `SHA256SUMS-Native-Fixed.txt`: checksums for the new Complete and Update ZIPs.
 
 The tested eboot.bin is **50,730 bytes**, SHA-256 `59cea01199b22570c734057aef26d2c6168e888ffe8508f4513b9c82c045ba5a`; libc.prx is **1,284,674 bytes**, SHA-256 `8a29784545983fffd7428446912711ec4e269672673e2d281612d3dbf4c39e88`. Size alone does not identify a build.
 
