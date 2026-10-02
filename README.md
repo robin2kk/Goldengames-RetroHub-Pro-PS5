@@ -4,6 +4,8 @@ Native PS5 retro gaming frontend by GoldenGames, with 3D cover flow, automatic c
 
 ## Download
 
+**Upload pending:** Native-Fixed archives have been prepared and verified, but are not yet attached to the release. Do not install the superseded Complete/Update assets. The package list below describes the planned replacement downloads.
+
 [v0.1.0 — Native SELF fix](https://github.com/robin2kk/Goldengames-RetroHub-Pro-PS5/releases/tag/v0.1.0)
 
 **Use the downloads marked `Native-Fixed`.** The author tested the recovered SELF executable and runtime on October 1, 2026. Earlier Complete-Corrected and Update-Corrected packages contained raw ELF files and are superseded.
